@@ -86,6 +86,8 @@ export async function loader({request, context}: LoaderFunctionArgs & {context: 
     );
   }
 
+
+  
   try {
     const adminResponse = await fetch(
       `https://${storeDomain}/admin/api/2025-01/customers/${customerId}.json`,
